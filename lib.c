@@ -16,8 +16,7 @@ int main(){
         printf("Choose the option:\n");
         printf("1- Add Book\n");
         printf("2- Read Lib\n");
-        printf("3- Exclude\n");
-        printf("4- Quit\n");
+        printf("3- Quit\n");
         scanf("%d", &choose);
 
         switch (choose){
@@ -50,7 +49,6 @@ int main(){
                     }
                     fclose(dbRead);
                 }break;
-            
         }
-    }while(choose != 4);
+    }while(choose != 3);
 }
