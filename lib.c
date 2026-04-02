@@ -9,7 +9,7 @@ struct book{
 int main(){
    
 
-    int escolha;
+    int choose;
 
     do{
         printf("---MENU---\n");
@@ -18,9 +18,9 @@ int main(){
         printf("2- Read Lib\n");
         printf("3- Exclude\n");
         printf("4- Quit\n");
-        scanf("%d", &escolha);
+        scanf("%d", &choose);
 
-        switch (escolha){
+        switch (choose){
             case 1:
                 FILE *db = fopen("db.txt", "a");  // Pointer
                 if (db != NULL){     //checks if the database exists
@@ -52,5 +52,5 @@ int main(){
                 }break;
             
         }
-    }while(escolha != 4);
+    }while(choose != 4);
 }
